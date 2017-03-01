@@ -29,8 +29,8 @@ for i in review_list:
 	#will include subjectivity
 
 	#textblob makes it so easy!!!
-
+overall_score=0
 for i in total:
 	overall_score=worth_buy+i
-overall_score=overall_score/(n+1)
-print("Overall user satisfaction for this product: "+ str(overall_score))
+overall_score=overall_score/(n)
+print("Overall user satisfaction for this product: "+ str(overall_score) +"%")

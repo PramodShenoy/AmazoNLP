@@ -6,8 +6,19 @@ Using the Amazon Product Search API and some web scraping,all reviews of the sea
 The JSON is parsed and sentiment analysis performed</br>
 This tells  the user about any product without even looking it up online 
 
-##Add APIs used and usages
+##Usage
+``python bottle.py``</br>
+``Enter product name:iphone 6``
+
 
 ##Dependencies
-1. TextBlob
-2. NLTK
+* TextBlob
+* NLTK
+* Amazon product API
+* Bottlenose API
+* JSON
+* BeautifulSoup
+* lxml
+* pprint 
+* requests</br>
+install missing dependencies using [pip](https://pypi.python.org/pypi/pip)

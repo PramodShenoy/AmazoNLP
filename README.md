@@ -1,4 +1,4 @@
-# AmazonReviewSentiments
+# AmazoNLP-Sentiment analysis of the marketplace
 ##Overview
 This Python script allows the user to search for a particular product. It finds user reviews (by using Amazon Product Search API and some web scraping), and performs sentiment analysis on them. It finally returns user satisfaction score, which lets the user decide his next purchase more quantitatively.
 ##Details

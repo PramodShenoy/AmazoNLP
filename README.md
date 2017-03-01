@@ -10,3 +10,4 @@ This tells  the user about any product without even looking it up online
 
 ##Dependencies
 1. TextBlob
+2. NLTK

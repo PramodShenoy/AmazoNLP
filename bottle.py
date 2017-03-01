@@ -9,7 +9,7 @@ import amazon_scraper
 
 amazon = AmazonAPI(ACCESS_KEY_ID, SECRET_KEY, ASSOC_TAG)
 search_item=raw_input()
-products = amazon.search_n(10, Keywords=search_item, SearchIndex='All')
+products = amazon.search_n(5, Keywords=search_item, SearchIndex='All')
 #products=products[0:10]
 asinlist=[]
 for product in products:

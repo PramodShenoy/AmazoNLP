@@ -7,7 +7,7 @@ The JSON is parsed and sentiment analysis performed</br>
 This tells  the user about any product without even looking it up online 
 
 ##Usage
-``python bottle.py``</br>
+``python bottle.py``<p>
 ``Enter product name:iphone 6``
 
 

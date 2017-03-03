@@ -11,7 +11,7 @@ from pprint import pprint
 
 amazon = AmazonAPI(ACCESS_KEY_ID, SECRET_KEY, ASSOC_TAG)
 #search_item=raw_input()
-search_item='moto z'
+search_item='nail cutter'
 products = amazon.search_n(5, Keywords=search_item, SearchIndex='All')
 #products=products[0:10]
 asinlist=[]
@@ -30,11 +30,11 @@ data.close()
 #print a['review_text']
 review_list=[]
 a=reviews[0]['reviews'][0]
+print len(a)
+#print reviews[4]['reviews'][4]['review_text']
+count =1
 for i in range(5):
-	for j in range(len(a)):
-		a=reviews[i]['reviews'][j]
-		review_list.append(a['review_text'])
-count=1
-for line in review_list:
-	print count,line
-	count=count+1
+	for j in range(len(reviews[i]['reviews'])):
+		print count,reviews[i]['reviews'][j]['review_text']
+		count=count+1
+

@@ -7,6 +7,7 @@ The JSON is parsed and sentiment analysis performed</br>
 This tells  the user about any product without even looking it up online 
 
 ##Usage
+Copy the bottle.py and the amazon_scraper.py files to your local machine and run </br>
 ``python bottle.py``<p>
 ``Enter product name:iphone 6``
 

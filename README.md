@@ -10,6 +10,11 @@ This tells  the user about any product without even looking it up online
 ``python bottle.py``<p>
 ``Enter product name:iphone 6``
 
+##Output
+* Gives a list of top 5 items related to the keyword and list of reviews
+* Each review is accompanied by a sentiment analysis of the review in '%' format 
+* Every product also has a final analyis score which can help the user in choosing the right product
+
 
 ##Dependencies
 * TextBlob

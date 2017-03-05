@@ -52,7 +52,7 @@ for k in range(5):
 	print title_list[k]
 	print "\n"*2
 	for i in range(8):
-		index=8*k+i
+		index=7*k+i
 		r=review_list[index]
 		review=sent_tokenize(review_list[index])
 		pos=[]

@@ -47,32 +47,36 @@ print "\n"*3
 n=0
 review_count=0
 total=[]
-for k in range(5):
-	print "\n"*3
-	print title_list[k]
-	print "\n"*2
-	for i in range(8):
-		index=7*k+i
-		r=review_list[index]
-		review=sent_tokenize(review_list[index])
-		pos=[]
-		count=0
-		for line in review:
-			line=TextBlob(line)
-			count=count+1
-			pos.append(line.sentiment.polarity)
+try:
+	for k in range(len(title_list)):
+		print "\n"*3
+		print title_list[k]
+		print "\n"*2
+		for i in range(8):
+			index=7*k+i
+			r=review_list[index]
+			review=sent_tokenize(review_list[index])
+			pos=[]
+			count=0
+			for line in review:
+				line=TextBlob(line)
+				count=count+1
+				pos.append(line.sentiment.polarity)
 
-		polar_mean=0
-		for j in pos:
-			polar_mean=polar_mean+j
-		polar_mean=polar_mean/count
+			polar_mean=0
+			for j in pos:
+				polar_mean=polar_mean+j
+			polar_mean=polar_mean/count
 
-		print r
-		print ("Positivity for review"+ "= " + str(polar_mean*100) +"%"+"\n")
-		total.append(polar_mean*100)
-		n=n+1
-	overall_score=0
-	for i in total:
-		overall_score=overall_score+i
-	overall_score=overall_score/(n)
-	print("Overall user satisfaction for this product: "+ str(overall_score) +"%")
+			print r
+			print ("Positivity for review"+ "= " + str(polar_mean*100) +"%"+"\n")
+			total.append(polar_mean*100)
+			n=n+1
+		overall_score=0
+		for i in total:
+			overall_score=overall_score+i
+		overall_score=overall_score/(n)
+		print("Overall user satisfaction for this product: "+ str(overall_score) +"%")
+
+except Exception as e:
+	print("That's all folks!!!")

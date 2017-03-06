@@ -1,6 +1,6 @@
-ACCESS_KEY_ID = "AKIAJHZCPV6PDEQXFQLQ"
-SECRET_KEY = "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"
-ASSOC_TAG = "pst037-20"
+ACCESS_KEY_ID = "####"
+SECRET_KEY = "#+##/##"
+ASSOC_TAG = "##-##"
 
 import bottlenose
 from lxml import objectify

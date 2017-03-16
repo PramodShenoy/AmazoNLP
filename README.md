@@ -1,23 +1,23 @@
 # AmazoNLP-Sentiment analysis of the marketplace
-##Overview
+## Overview
 This Python script allows the user to search for a particular product. It finds user reviews (by using Amazon Product Search API and some web scraping), and performs sentiment analysis on them. It finally returns user satisfaction score, which lets the user decide his next purchase more quantitatively.
-##Details
+## Details
 Using the Amazon Product Search API and some web scraping,all reviews of the search product are obtained in JSON</br>
 The JSON is parsed and sentiment analysis performed</br>
 This tells  the user about any product without even looking it up online 
 
-##Usage
+## Usage
 Copy the bottle.py and the amazon_scraper.py files to your local machine and run </br>
 ``python bottle.py``<p>
 ``Enter product name:iphone 6``
 
-##Output
+## Output
 * Gives a list of top 5 items related to the keyword and list of reviews
 * Each review is accompanied by a sentiment analysis of the review in '%' format 
 * Every product also has a final analyis score which can help the user in choosing the right product
 
 
-##Dependencies
+## Dependencies
 * TextBlob
 * NLTK
 * Amazon product API
@@ -28,3 +28,5 @@ Copy the bottle.py and the amazon_scraper.py files to your local machine and run
 * pprint 
 * requests</br>
 install missing dependencies using [pip](https://pypi.python.org/pypi/pip)
+
+<a href="https://madewithlove.org.in" target="_blank">Made with <span style="color: #e74c3c">&hearts;</span> in India</a>
